@@ -1,0 +1,63 @@
+.header {
+  padding: 50px 0 95px;
+
+  height: 100vh;
+  background: url(../images/header-bg.png) no-repeat center/cover;
+  background-color: #290a59;
+  color: #fff;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    div {
+      text-align: center;
+      text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 23px;
+      letter-spacing: 32px;
+
+      position: relative;
+
+      &::before {
+        content: "CREA TIVE";
+        font-family: "Playfair Display", sans-serif;
+        font-size: 200px;
+        font-weight: 900;
+        line-height: 180px;
+        letter-spacing: 8px;
+        max-width: 550px;
+        opacity: 0.3;
+
+        position: absolute;
+        // top: -180px;
+        // right: calc(50% - 230px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    }
+  }
+
+  &__slogan {
+    margin-right: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+      text-align: center;
+      max-width: 325px;
+
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+}

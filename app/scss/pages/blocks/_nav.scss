@@ -1,0 +1,34 @@
+.nav {
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    max-width: 548px;
+
+    display: flex;
+    align-items: center;
+
+    li {
+
+      &:not(:last-child) {
+        margin-right: 48px;
+      }
+
+      a.header__link {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 900;
+        line-height: 23px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        border-bottom: 2px solid transparent;
+        transition: all .4s linear;
+
+        &:hover {
+          border-bottom: 2px solid #00e558;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.about {
+  margin: 150px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1575px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      display: flex;
+
+      flex: 0 0 80%;
+      max-width: 80%;
+
+      @media (max-width: 1220px) {
+        flex-direction: column;
+      }
+
+      .about-bg {
+        display: flex;
+        justify-content: center;
+
+        width: 840px;
+        height: 720px;
+
+        background: url(../images/about-bg.png) no-repeat center/cover;
+        background-color: #290a59;
+
+        position: relative;
+
+        @media (max-width: 1220px) {
+          width: 100%;
+        }
+
+        // flex: 0 0 60%;
+        // max-width: 60%;
+
+        // @media (max-width: 1220px) {
+        //   flex: 0 0 0;
+        //   max-width: 100%;
+        // }
+
+        &::before {
+          content: url(../images/about-logo.svg);
+          opacity: 0.3;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+        }
+      }
+
+      figcaption {
+        padding: 100px 0;
+        width: 555px;
+        background-color: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // flex: 0 0 40%;
+        // max-width: 40%;
+
+        @media (max-width: 1220px) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-info {
+      max-width: 298px;
+      // min-height: 400px;
+
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+
+      @media (max-width: 1575px) {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+
+      &--item + &--item {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__title--lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    z-index: 3;
+  }
+
+  &__title--sm {
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    align-self: center;
+    transform: rotate(-90deg);
+
+    margin-right: 100px;
+
+    @media (max-width: 1575px) {
+      transform: rotate(0);
+      margin-top: 30px;
+      margin-right: 0;
+    }
+  }
+}

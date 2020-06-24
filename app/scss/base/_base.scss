@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #e9ecef;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.title--lg {
+  color: #290a59;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 16px;
+
+  @media (max-width: 526px) {
+    font-size: 30px;
+  }
+
+  span {
+    display: block;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 80px;
+    letter-spacing: 0;
+
+    @media (max-width: 526px) {
+      font-size: 60px;
+    }
+  }
+}
+
+.title--md {
+  color: #290a59;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.title--sm {
+  color: #00e558;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 5.2px;
+  text-transform: uppercase;
+
+  &--purple {
+    color: #290a59;
+  }
+}
+
+.text--default {
+  color: #6d6081;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.btn--default {
+  padding: 22px 24px;
+
+  color: #290a59;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5.2px;
+  border: 2px solid #00e558;
+}
+
+.block-info {
+  margin: 0 auto;
+
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+
+  &-title {
+    padding-left: 48px;
+    border-left: 2px solid #00e658;
+  }
+}
+
+.link--default {
+  margin-top: 5px;
+
+  color: #6d6081;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-arrow {
+  padding: 21px 18px;
+  border: 2px solid #00e558;
+  cursor: pointer;
+
+  z-index: 3;
+}
